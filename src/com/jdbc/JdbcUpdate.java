@@ -23,7 +23,7 @@ public class JdbcUpdate {
 			
 			int a=st.executeUpdate(query);
 			
-			System.out.println(a+" row  inserted");
+			System.out.println(a+" row  updated");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
