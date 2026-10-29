@@ -24,6 +24,9 @@ public class JdbcUpdate {
 			int a=st.executeUpdate(query);
 			
 			System.out.println(a+" row  updated");
+			
+			conn.close();
+			st.close();
 		
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -13,7 +13,7 @@ public class JdbcWrite {
 		String user="root";
 		String pass="Vishwa@1107";
 		
-		String query="insert into stu values(102,'mars',97,22)";
+		String query="insert into stu values(104,'sun',99,24)";
 		
 		try {
 			
@@ -24,6 +24,9 @@ public class JdbcWrite {
 			int a=st.executeUpdate(query);
 			
 			System.out.println(a+" row  inserted");
+			
+			conn.close();
+			st.close();
 		
 		} catch (Exception e) {
 			e.printStackTrace();
